@@ -1,0 +1,54 @@
+{
+    "Defaults":{
+        "DBDIR" : "${MGRDIR}",
+        "WEBAPPDIR" : "${CSPDIR}",
+        "DBDATA" : "${DBDIR}irisappdata/",
+        "DBCODE" : "${DBDIR}irisappcode/"
+    },
+    "SYS.Databases":{
+        "${DBDATA}" : {"ExpansionSize":128},
+        "${DBCODE}" : {}
+    },
+    "Databases":{
+        "IRISAPPDATA" : {
+            "Directory" : "${DBDATA}"
+        },
+        "IRISAPPCODE" : {
+            "Directory" : "${DBCODE}"
+        }
+    },
+    "Namespaces":{
+        "IRISAPP": {
+            "Globals":"IRISAPPDATA",
+            "Routines":"IRISAPPCODE"
+        }
+    },
+    "Security.Applications": {
+        "/rest/irisapp": {
+            "DispatchClass" : "dispatch.class",
+            "Namespace" : "IRISAPP",
+            "Enabled" : "1",
+            "AutheEnabled": "64",
+            "CookiePath" : "/rest/irisapp/"
+        },
+        "/csp/irisapp": {
+            "Path": "${WEBAPPDIR}zwebapp/",
+            "Namespace" : "IRISAPP",
+            "Enabled" : "1",
+            "AutheEnabled": "64",
+            "CookiePath" : "/csp/irisapp/"
+        }
+    },
+    "Journal": {                                
+        "FreezeOnError":1
+    },
+    "SQL": {                                    
+        "LockThreshold" : 1000
+    },
+    "config": {                                 
+        "locksiz" : 16777216
+    },
+    "Startup":{
+        "SystemMode" : "DEVELOPMENT"
+    }
+ }
