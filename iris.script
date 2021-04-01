@@ -4,8 +4,9 @@ zn "%SYS"
 Do ##class(Security.Users).UnExpireUserPasswords("*")
 
 zn "USER"
-Do $SYSTEM.OBJ.Load("/opt/irisbuild/config-api.xml","ck")
-; update to the latest version of zpm
-zpm "install zpm"
-zpm "load /opt/irisbuild/ -v":1:1
+; load config-api (not yet on OEX)
+Do $SYSTEM.OBJ.Load("/opt/irisbuild/config-api/config-api.xml","ck")
+; update ZPM version
+Do $SYSTEM.OBJ.Load("/opt/irisbuild/config-api/zpm-0.2.13.xml","ck")
+zpm "load -v /opt/irisbuild/":1:1
 halt
