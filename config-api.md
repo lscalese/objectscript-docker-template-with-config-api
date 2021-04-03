@@ -194,6 +194,10 @@ With default parameters :
 "Library.SQLConnection": {
     "SQLConnection1" : {}
 }
+```
+
+Custom : 
+
 ```json
 "Library.SQLConnection": {
     "SQLConnection1" : {
