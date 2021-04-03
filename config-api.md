@@ -192,8 +192,8 @@ Custom :
 With default parameters : 
 ```json
 "Library.SQLConnection": {
-    "SQLConnection1" : {},https://community.intersystems.com/post/automatize-environment-setup-config-api
-Custom : 
+    "SQLConnection1" : {}
+}
 ```json
 "Library.SQLConnection": {
     "SQLConnection1" : {
@@ -227,4 +227,3 @@ Custom :
 
 [github project page](https://github.com/lscalese/iris-config-api)
 
-[community article](https://community.intersystems.com/post/automatize-environment-setup-config-api)
