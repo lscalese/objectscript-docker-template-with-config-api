@@ -5,16 +5,22 @@
       <Name>objectscript-template-with-config-api</Name>
       <Version>0.0.1</Version>
       <Packaging>module</Packaging>
-      
-      <FileCopy Name="config-api/" InstallDirectory="${libdir}config-api/" Phase="Reload"/>
 
-      <Invoke Class="Api.Config.Services.Loader" Method="Load" Phase="Reload">
+      <FileCopy Name="config-api/" InstallDirectory="${libdir}config-api/"/>
+      <Invoke Class="Api.Config.Services.Loader" Method="LoadFromInvoke">
         <Arg>${root}config-api/iris-config.json</Arg>
       </Invoke>
       
       <SourcesRoot>src</SourcesRoot>
       <Resource Name="dc.PackageSample.PKG"/>
       
+      <Dependencies>
+        <ModuleReference>
+          <Name>config-api</Name>
+          <Version>0.0.2</Version>
+        </ModuleReference>
+      </Dependencies>
+
     </Module>
   </Document>
 </Export>
