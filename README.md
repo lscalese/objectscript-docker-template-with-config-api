@@ -4,6 +4,8 @@ This is a copy of Intersystems template [intersystems-objectscript-template](htt
 
 Empty configuration file is located to [`./config-api/iris-config.json`](./config-api/iris-config.json) see documentation [./config-api.md](./config-api.md) or on [config-api project page](https://github.com/lscalese/iris-config-api) for more informations.  
 
+Configuration file is loaded by an `Invoke` from [`module.xml`](./module.xml)
+
 ## Prerequisites
 Make sure you have [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [Docker desktop](https://www.docker.com/products/docker-desktop) installed.
 
