@@ -6,9 +6,9 @@
 
     ],
     "Security.SQLAdminPrivilegeSet" : {
-        "${namespace}": [{
+        "${namespace}": [
             
-        }]
+        ]
     },
     "Security.Users": {
         
