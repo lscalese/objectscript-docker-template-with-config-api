@@ -80,6 +80,17 @@ Configuration file is located to [`./config-api/iris-config.json`](./config-api/
 * `a` : alter
 * `r` : reference
 
+**`SQLObject` structure**  
+Start with `#,` where # value is : 
+
+* `1` for a table
+* `3` for a view
+* `9` for a stored procedure
+
+Then the table\view\stored procedure reference.  
+If the reference is a table, you can use the wildcard `*` as trailing character only.  
+
+
 Default value for not defined properties : 
 
 * `Grantable` : 0

@@ -1,6 +1,8 @@
-## intersystems-objectscript-template
-This is a template for InterSystems ObjectScript Github repository.
-The template goes also with a few files which let you immedietly compile your ObjecScript files in InterSystems IRIS Community Edition in a docker container
+## intersystems-objectscript-template-with-config-api
+
+This is a copy of Intersystems template [intersystems-objectscript-template](https://github.com/intersystems-community/objectscript-docker-template) which include [config-api](https://github.com/lscalese/iris-config-api) library.  
+
+Empty configuration file is located to [`./config-api/iris-config.json`](./config-api/iris-config.json) see documentation [./config-api.md](./config-api.md) or on [config-api project page](https://github.com/lscalese/iris-config-api) for more informations.  
 
 ## Prerequisites
 Make sure you have [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [Docker desktop](https://www.docker.com/products/docker-desktop) installed.
