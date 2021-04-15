@@ -61,7 +61,7 @@ Configuration file is located to [`./config-api/iris-config.json`](./config-api/
 "Security.SQLPrivileges": [{
     "Grantee": "MyRoleRO",
     "PrivList" : "s",
-    "SQLObject" : "1,dc.PackageSample.*"
+    "SQLObject" : "1,dc_PackageSample.*"
 },{
     "Grantable" : 0,
     "Grantee": "MyAppRoleRW",

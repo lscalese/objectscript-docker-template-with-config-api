@@ -4,10 +4,6 @@ zn "%SYS"
 Do ##class(Security.Users).UnExpireUserPasswords("*")
 
 zn "USER"
-; load config-api (not yet on OEX)
-Do $SYSTEM.OBJ.Load("/opt/irisbuild/config-api/config-api_with_dependencies.xml","ck")
-; update ZPM version
-Do $SYSTEM.OBJ.Load("/opt/irisbuild/config-api/zpm-0.2.13.xml","ck")
 ; zpm "repo -n registry -r -url https://test.pm.community.intersystems.com/registry/ -user test -pass PassWord42"
 zpm "load -v /opt/irisbuild/":1:1
 halt
